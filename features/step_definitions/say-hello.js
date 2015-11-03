@@ -1,6 +1,9 @@
 var expect = require('chai').expect
 
 module.exports = function(){
+
+  //TODO: Failed Scenario? Get a screenshot!
+
   this.Given(/^I am on the home page with an empty input$/, function (done) {
     browser.get('/')
     done();
