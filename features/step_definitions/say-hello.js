@@ -1,9 +1,7 @@
-//TODO: Start selenium - webdriver-manager start
-//TODO: Run app in basic http server - http-server
-//TODO: Run protractor tests - protractor protractor-conf.js
+
 module.exports = function(){
   this.Given(/^I am on the home page with an empty input$/, function (done) {
-    //TODO: Navigate to the app's home Page
+    browser.get('/')
     done();
   });
 
