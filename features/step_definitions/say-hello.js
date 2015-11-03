@@ -16,7 +16,7 @@ module.exports = function(){
   });
 
   this.Then(/^The message should include my name$/, function (done) {
-    //TODO: Make assertions about the content of the page
+    //TODO: In order to make assertions - we need an assertion library
     done();
   });
 }
