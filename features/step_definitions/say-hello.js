@@ -6,7 +6,7 @@ module.exports = function(){
   });
 
   this.Given(/^I have typed my name into the input$/, function (done) {
-    //TODO: Type some input into the input field
+    element(by.model('suppliedName')).sendKeys("John Smith");
     done();
   });
 
