@@ -13,3 +13,5 @@ Feature: Pointless feature
   Scenario: No Input Value Supplied
     Given I am on the home page with an empty input
     When I click on the button
+    # Run it again - it'll give you the missing step
+    Then The message should prompt me for input
