@@ -1,22 +1,22 @@
 
 module.exports = function(){
-  this.Given(/^I am on the home page with an empty input$/, function (callback) {
+  this.Given(/^I am on the home page with an empty input$/, function (done) {
     // Write code here that turns the phrase above into concrete actions
-    callback.pending();
+    done.pending();
   });
 
-  this.Given(/^I have typed my name into the input$/, function (callback) {
+  this.Given(/^I have typed my name into the input$/, function (done) {
     // Write code here that turns the phrase above into concrete actions
-    callback.pending();
+    done.pending();
   });
 
-  this.When(/^I click on the button$/, function (callback) {
+  this.When(/^I click on the button$/, function (done) {
     // Write code here that turns the phrase above into concrete actions
-    callback.pending();
+    done.pending();
   });
 
-  this.Then(/^The message should include my name$/, function (callback) {
+  this.Then(/^The message should include my name$/, function (done) {
     // Write code here that turns the phrase above into concrete actions
-    callback.pending();
+    done.pending();
   });
 }
