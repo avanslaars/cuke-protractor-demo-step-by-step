@@ -20,6 +20,11 @@ module.exports = function(){
     element(by.className('message')).getText().then(function(text){
       expect(text).to.match(/Smith/)
       done();
-    })
+    });
+  });
+
+  this.Then(/^The message should prompt me for input$/, function (done) {
+    // Write code here that turns the phrase above into concrete actions
+    done.pending();
   });
 }
