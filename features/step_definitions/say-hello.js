@@ -12,7 +12,7 @@ module.exports = function(){
 
   this.When(/^I click on the button$/, function (done) {
     // Write code here that turns the phrase above into concrete actions
-    done.pending();
+    done.fail();
   });
 
   this.Then(/^The message should include my name$/, function (done) {
