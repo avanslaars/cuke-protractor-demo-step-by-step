@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Stupid Angular App</title>
+  </head>
+  <body>
+    <div ng-controller="MainController">
+      <form ng-submit="handleSubmit()">
+        <input name="customer-name" type="text" ng-model="suppliedName"/>
+        <input type="submit" value="submit"/>
+      </form>
+      <span class="message">{{SampleMessage}}</span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
