@@ -18,7 +18,7 @@ module.exports = function(){
 
   this.Then(/^The message should include my name$/, function (done) {
     element(by.className('message')).getText().then(function(text){
-      expect(text).to.equal("Hello John Smith")
+      expect(text).to.match(/Smith/)
       done();
     })
   });
