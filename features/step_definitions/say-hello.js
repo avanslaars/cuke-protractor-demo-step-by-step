@@ -1,3 +1,4 @@
+var expect = require('chai').expect
 
 module.exports = function(){
   this.Given(/^I am on the home page with an empty input$/, function (done) {
@@ -16,7 +17,7 @@ module.exports = function(){
   });
 
   this.Then(/^The message should include my name$/, function (done) {
-    //TODO: In order to make assertions - we need an assertion library
+    //TODO: Now we can make assertions
     done();
   });
 }
