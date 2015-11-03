@@ -3,7 +3,14 @@ var expect = require('chai').expect
 module.exports = function(){
 
   this.After(function (scenario, done) {
-    //Runs code after each scenario & knows about the scenario
+    if (scenario.isFailed()) {
+      browser.takeScreenshot().then(function (png) {
+        //TODO: Do something with the data
+        done()
+      });
+    }else{
+      done()
+    }
   });
 
   this.Given(/^I am on the home page with an empty input$/, function (done) {
