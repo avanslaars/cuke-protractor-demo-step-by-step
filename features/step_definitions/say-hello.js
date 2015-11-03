@@ -17,7 +17,7 @@ module.exports = function(){
   });
 
   this.Then(/^The message should include my name$/, function (done) {
-    //TODO: Now we can make assertions
+    element(by.className('message')).getText() //Returns a promise
     done();
   });
 }
