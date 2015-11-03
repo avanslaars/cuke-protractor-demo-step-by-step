@@ -11,7 +11,7 @@ module.exports = function(){
   });
 
   this.When(/^I click on the button$/, function (done) {
-    //TODO: Click the button
+    element(by.buttonText("submit")).click()
     done();
   });
 
