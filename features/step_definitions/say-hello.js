@@ -18,7 +18,7 @@ module.exports = function(){
 
   this.Then(/^The message should include my name$/, function (done) {
     element(by.className('message')).getText().then(function(text){
-      //TODO: Assert value once resolved
+      expect(text).to.equal("Hello John Smith")
       done();
     })
   });
