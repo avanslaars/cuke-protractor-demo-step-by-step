@@ -16,7 +16,6 @@
       else {
         $scope.SampleMessage = "Please supply a name"
       }
-      $scope.suppliedName = ""
     }
   }
 
