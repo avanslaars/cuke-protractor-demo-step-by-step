@@ -1,11 +1,12 @@
 var expect = require('chai').expect
+var writeScreenShot = require('../utils').writeScreenShot
 
 module.exports = function(){
 
   this.After(function (scenario, done) {
     if (scenario.isFailed()) {
       browser.takeScreenshot().then(function (png) {
-        //TODO: Do something with the data
+        writeScreenShot(png,'sample.png')
         done()
       });
     }else{
